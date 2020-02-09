@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="headers">
+        <div  class="headerTab">
+            <div>
+                <div class="saved_list"><i class="fa fa-list"></i>SAVED LISTS</div>
+            </div>
+            <div>
+                <div><i class="fa fa-filter"> SAVED FILTERS</i></div>
+            </div>
+            <div>
+                <div><i class="fa fa-history"> SEARCH HISTORY</i></div>
+            </div>
+        </div>
+        <div>
+            <div class="searchBox">
+                <input placeholder="Search by Name" onkeyup="searchByName(event)"/>
+             </div>
+        </div>
+    </div>
+
+    <div class="content">
+       <div class="data-table">
+        <table id="myTable user-list">
+            <tr class="user-row">
+                  <th class="tableHeadersName">Name</th>
+                  <th class="tableHeadersName">Type </th>
+                  <th class="tableHeadersName">Actions</th>
+                  <th class="tableHeadersName"></th>
+            </tr>
+            <tbody id="baseData" class="table-wrapper-scroll-y"></tbody>
+        </table>
+       </div>
+
+       <div class="detail">
+           <div>
+               <div class="detailHead">
+                   <p> NO description yet <span class="add"> +Add Description</span></p>
+               </div>
+               <div id="detailContent"></div>
+           </div>
+       </div>
+    </div>
+    
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="script.js"></script>
+</html>
